@@ -4,62 +4,62 @@
 <table mat-table [dataSource]="offerList">
   <ng-container matColumnDef="offer-id-col">
     <th mat-header-cell *matHeaderCellDef>offer ID</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.offerId}}</td>
+    <td mat-cell *matCellDef="let record">{{record.offerId}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-productId-col">
     <th mat-header-cell *matHeaderCellDef>product ID</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.id}}</td>
+    <td mat-cell *matCellDef="let record">{{record.id}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-productName-col">
     <th mat-header-cell *matHeaderCellDef>Product Name</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.name}}</td>
+    <td mat-cell *matCellDef="let record">{{record.name}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-description-col">
     <th mat-header-cell *matHeaderCellDef>Description</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.description}}</td>
+    <td mat-cell *matCellDef="let record">{{record.description}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-productCondition-col">
     <th mat-header-cell *matHeaderCellDef>Product Condition</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.productCondition}}</td>
+    <td mat-cell *matCellDef="let record">{{record.productCondition}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-productCategory-col">
     <th mat-header-cell *matHeaderCellDef>Product Category</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.productCategory}}</td>
+    <td mat-cell *matCellDef="let record">{{record.productCategory}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-purchaseNotes-col">
     <th mat-header-cell *matHeaderCellDef>Purchase Notes</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.purchaseNotes}}</td>
+    <td mat-cell *matCellDef="let record">{{record.purchaseNotes}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-price-col">
     <th mat-header-cell *matHeaderCellDef>Price</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.price}}</td>
+    <td mat-cell *matCellDef="let record">{{record.price}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-promoted-col">
     <th mat-header-cell *matHeaderCellDef>Promoted</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.promoted}}</td>
+    <td mat-cell *matCellDef="let record">{{record.promoted}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-location-col">
     <th mat-header-cell *matHeaderCellDef>Location</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.location}}</td>
+    <td mat-cell *matCellDef="let record">{{record.location}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-paymentMethod-col">
     <th mat-header-cell *matHeaderCellDef>Payment Method</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.paymentMethod}}</td>
+    <td mat-cell *matCellDef="let record">{{record.paymentMethod}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-createdAt-col">
     <th mat-header-cell *matHeaderCellDef>Created At</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.createdAt}}</td>
+    <td mat-cell *matCellDef="let record">{{record.createdAt}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-finishedAt-col">
     <th mat-header-cell *matHeaderCellDef>Finished At</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.finishedAt}}</td>
+    <td mat-cell *matCellDef="let record">{{record.finishedAt}}</td>
   </ng-container>
   <ng-container matColumnDef="offer-userEntity-col">
     <th mat-header-cell *matHeaderCellDef>User</th>
-    <td mat-cell *matCellDef="let rekord">{{rekord.userEntity}}</td>
+    <td mat-cell *matCellDef="let record">{{record.userEntity}}</td>
   </ng-container>
   <tr mat-header-row *matHeaderRowDef="columnList"></tr>
-  <tr mat-row *matRowDef="let wiersz; columns: columnList"></tr>
+  <tr mat-row *matRowDef="let row; columns: columnList"></tr>
 </table>
   </mat-card-content>
 </mat-card>

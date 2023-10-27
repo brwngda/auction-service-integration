@@ -27,6 +27,7 @@ export class OfferListComponent {
   ]
 
   constructor(private httpClient: HttpClient) {
+    this.getOffers()
   }
   getOffers() : void {
     this.httpClient.get<Offer[]>("http://localhost:8080/offers")
